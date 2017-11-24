@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.EuStaticEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.EuStaticEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="UUID" jdbcType="VARCHAR" property="uuid" />
+    <id column="houseID" jdbcType="BIGINT" property="houseid" />
+    <id column="euID" jdbcType="VARCHAR" property="euid" />
+    <result column="euIP" jdbcType="VARCHAR" property="euip" />
+    <result column="idcID" jdbcType="VARCHAR" property="idcid" />
+    <result column="provID" jdbcType="INTEGER" property="provid" />
+    <result column="idcName" jdbcType="VARCHAR" property="idcname" />
+    <result column="eu_cu_comm_stat" jdbcType="INTEGER" property="euCuCommStat" />
+    <result column="eu_cu_comm_stat_his" jdbcType="INTEGER" property="euCuCommStatHis" />
+    <result column="device_stat" jdbcType="INTEGER" property="deviceStat" />
+    <result column="device_stat_his" jdbcType="INTEGER" property="deviceStatHis" />
+    <result column="process_stat" jdbcType="INTEGER" property="processStat" />
+    <result column="process_stat_his" jdbcType="INTEGER" property="processStatHis" />
+    <result column="cpurate_stat" jdbcType="INTEGER" property="cpurateStat" />
+    <result column="cpurate_stat_his" jdbcType="INTEGER" property="cpurateStatHis" />
+    <result column="disk_stat" jdbcType="INTEGER" property="diskStat" />
+    <result column="disk_stat_his" jdbcType="INTEGER" property="diskStatHis" />
+    <result column="memory_stat" jdbcType="INTEGER" property="memoryStat" />
+    <result column="memory_stat_his" jdbcType="INTEGER" property="memoryStatHis" />
+    <result column="runinfo_stat" jdbcType="INTEGER" property="runinfoStat" />
+    <result column="runinfo_stat_his" jdbcType="INTEGER" property="runinfoStatHis" />
+    <result column="eu_du_comm_stat" jdbcType="INTEGER" property="euDuCommStat" />
+    <result column="eu_du_comm_stat_his" jdbcType="INTEGER" property="euDuCommStatHis" />
+    <result column="link_stat" jdbcType="INTEGER" property="linkStat" />
+    <result column="link_stat_his" jdbcType="INTEGER" property="linkStatHis" />
+    <result column="network_stat" jdbcType="INTEGER" property="networkStat" />
+    <result column="network_stat_his" jdbcType="INTEGER" property="networkStatHis" />
+    <result column="reserve0" jdbcType="VARCHAR" property="reserve0" />
+    <result column="reserve1" jdbcType="VARCHAR" property="reserve1" />
+    <result column="partial_stat" jdbcType="INTEGER" property="partialStat" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="status_his" jdbcType="INTEGER" property="statusHis" />
+    <result column="recordTime" jdbcType="TIMESTAMP" property="recordtime" />
+  </resultMap>
+</mapper>

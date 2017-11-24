@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background: #0d5ba5 url(../../images/login/m.gif) no-repeat fixed top;
+}
+
+.sys_title {
+	margin-top: 130px;
+	color: #ffffff;
+	font-size: 36px;
+	font-family: 黑体;
+	text-align: center;
+	font-weight: 900;
+}
+
+.mt {
+	margin-top: 150px;
+}
+
+.mt a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 900;
+	font-family: 黑体;
+}

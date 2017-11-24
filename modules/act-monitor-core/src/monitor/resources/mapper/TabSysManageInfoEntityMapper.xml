@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TabSysManageInfoEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.TabSysManageInfoEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="syamanage_id" jdbcType="TINYINT" property="syamanageId" />
+    <result column="sysmanage_name" jdbcType="VARCHAR" property="sysmanageName" />
+    <result column="picname" jdbcType="VARCHAR" property="picname" />
+    <result column="pathurl" jdbcType="VARCHAR" property="pathurl" />
+    <result column="opentype" jdbcType="CHAR" property="opentype" />
+    <result column="show_mk" jdbcType="CHAR" property="showMk" />
+    <result column="child_system_path" jdbcType="VARCHAR" property="childSystemPath" />
+  </resultMap>
+</mapper>

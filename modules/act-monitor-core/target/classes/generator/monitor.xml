@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<properties resource="config.properties" />
+
+	<context id="Mysql" targetRuntime="MyBatis3Simple"
+		defaultModelType="flat">
+		<property name="beginningDelimiter" value="`" />
+		<property name="endingDelimiter" value="`" />
+
+		<plugin type="com.kpr.generator.MapperPlugin">
+			<property name="mappers" value="com.kpr.mapper.common.Mapper" />
+		</plugin>
+
+		<jdbcConnection driverClass="${jdbc.driverClass}"
+			connectionURL="${jdbc.url}" userId="${jdbc.user}" password="${jdbc.password}">
+		</jdbcConnection>
+
+		<javaModelGenerator targetPackage="com.act.monitor.entity"
+			targetProject="G:\project\v2.0.0.0\act-monitor\modules\act-monitor-core\src\monitor\java\">
+			<property name="rootClass" value="com.act.framework.entity.StandardEntity" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="mapper"  targetProject="G:\project\v2.0.0.0\act-monitor\modules\act-monitor-core\src\monitor\resources\"/>
+
+
+		<!-- 菜单表 -->
+		<table tableName="tab_menu" domainObjectName="TabMenuEntity">
+			<generatedKey column="menu_id" sqlStatement="Mysql"
+				identity="true" />
+		</table>
+
+		<!--菜单权限表 -->
+		<table tableName="tab_secondary_menu" domainObjectName="TabSecondaryMenuEntity">
+			<generatedKey column="sec_menu_id" sqlStatement="Mysql"
+				identity="true" />
+		</table>
+
+		<!-- 系统表 -->
+		<table tableName="tab_sysmanageinfo" domainObjectName="TabSysManageInfoEntity">
+			<generatedKey column="syamanage_id" sqlStatement="Mysql"
+				identity="true" />
+		</table>
+
+		<!-- 用户表 user_id 不自动递增主键 -->
+		<table tableName="tab_sys_user" domainObjectName="TabSysUserEntity">
+		</table>
+
+		<!-- 报警权限表 scheme_id/user_type/allsid -->
+		<table tableName="t_auditpolicy_purview" domainObjectName="AuditpolicyPurviewEntity">
+		</table>
+
+		<!-- 权限属性表 -->
+		<table tableName="tab_user_role_purview" domainObjectName="RolePurviewEntity">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<!--用户机房关系表 -->
+		 <table tableName="tab_servicepurview" domainObjectName="ServicePurviewEntity">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<!-- unit_id/scheme_id -->
+		<table tableName="t_scheme" domainObjectName="TSchemeEntity">
+		</table>
+
+		<!-- IP受限登入表 -->
+	 <table tableName="tab_ip_limit" domainObjectName="TabIpLimitEntity">
+		</table>
+
+
+		<!--按钮权限表 -->
+		<table tableName="tab_purview" domainObjectName="TabPurviewEntity">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<!-- 机房表 service_code 主键 -->
+		 <table tableName="tab_service_information" domainObjectName="TabServiceInformationEntity">
+		</table>
+
+		<!-- 系统配置表 configid 不自动递增主键 -->
+		<table tableName="tab_sysconfig" domainObjectName="TabSysConfigEntity">
+		</table>
+
+
+		<table tableName="eu_sys_config" domainObjectName="EuSysConfigEntity">
+		</table>
+		<table tableName="web_sys_config" domainObjectName="WebSysConfigEntity">
+		</table>
+
+		<table tableName="cu_sys_config" domainObjectName="CuSysConfigEntity">
+		</table>
+
+		<table tableName="tab_menu_role" domainObjectName="TabMenuRoleEntity">
+		</table>
+
+
+		<table tableName="td_province" domainObjectName="TdProvinceEntity">
+		</table>
+
+
+		<table tableName="monsys_all_tabname_info" domainObjectName="MonsysAllTabnameInfoEntity">
+		</table>
+
+		<table tableName="monsys_all_idc_info" domainObjectName="MonsysAllIdcInfoEntity">
+		</table>
+
+
+		<table tableName="monsys_all_housename_info" domainObjectName="MonsysAllHousenameInfoEntity">
+		</table>
+
+		<table tableName="eu_static" domainObjectName="EuStaticEntity">
+		</table>
+
+		<table tableName="cu_static" domainObjectName="CuStaticEntity">
+		</table>
+
+		<table tableName="exception_table" domainObjectName="ExceptionTableEntity">
+		</table>
+
+
+		<table tableName="tab_instructions_info" domainObjectName="TabInstructionsInfoEntity">
+		<generatedKey column="instructionid" sqlStatement="Mysql"
+		identity="true" />
+		</table>
+
+		<table tableName="tab_alarm_sys_config" domainObjectName="TabAlarmSysConfigEntity">
+			<generatedKey column="configid" sqlStatement="Mysql"
+						  identity="true" />
+		</table>
+
+	</context>
+</generatorConfiguration>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TdProvinceEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.TdProvinceEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="PROV_ID" jdbcType="BIGINT" property="provId" />
+    <result column="PROV_NAME" jdbcType="VARCHAR" property="provName" />
+    <result column="PROV_CODE" jdbcType="VARCHAR" property="provCode" />
+    <result column="PROV_ACTIVE" jdbcType="INTEGER" property="provActive" />
+    <result column="PROV_NOTE" jdbcType="VARCHAR" property="provNote" />
+  </resultMap>
+</mapper>

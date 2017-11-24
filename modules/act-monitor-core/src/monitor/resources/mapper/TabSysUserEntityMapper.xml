@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TabSysUserEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.TabSysUserEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="state" jdbcType="BIT" property="state" />
+    <result column="last_time" jdbcType="TIMESTAMP" property="lastTime" />
+    <result column="login_amount" jdbcType="INTEGER" property="loginAmount" />
+    <result column="createuser" jdbcType="VARCHAR" property="createuser" />
+    <result column="sysmanage" jdbcType="VARCHAR" property="sysmanage" />
+    <result column="uuid" jdbcType="VARCHAR" property="uuid" />
+  </resultMap>
+</mapper>

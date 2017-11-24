@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TabSysConfigEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.TabSysConfigEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="configid" jdbcType="VARCHAR" property="configid" />
+    <result column="defaultval" jdbcType="VARCHAR" property="defaultval" />
+    <result column="configval" jdbcType="VARCHAR" property="configval" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+  </resultMap>
+</mapper>

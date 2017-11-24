@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TabMenuEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.TabMenuEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="menu_id" jdbcType="INTEGER" property="menuId" />
+    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
+    <result column="menu_name_ch" jdbcType="VARCHAR" property="menuNameCh" />
+    <result column="menu_name_en" jdbcType="VARCHAR" property="menuNameEn" />
+    <result column="menu_name_big" jdbcType="VARCHAR" property="menuNameBig" />
+    <result column="menu_title_ch" jdbcType="VARCHAR" property="menuTitleCh" />
+    <result column="menu_title_en" jdbcType="VARCHAR" property="menuTitleEn" />
+    <result column="menu_title_big" jdbcType="VARCHAR" property="menuTitleBig" />
+    <result column="menu_image" jdbcType="VARCHAR" property="menuImage" />
+    <result column="menu_url" jdbcType="VARCHAR" property="menuUrl" />
+    <result column="menu_parameter" jdbcType="VARCHAR" property="menuParameter" />
+    <result column="show_seq" jdbcType="INTEGER" property="showSeq" />
+    <result column="op_type" jdbcType="CHAR" property="opType" />
+    <result column="verflag" jdbcType="VARCHAR" property="verflag" />
+  </resultMap>
+</mapper>

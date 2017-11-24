@@ -1,0 +1,62 @@
+body {
+	background-color: white;
+	SCROLLBAR-face-COLOR: #D8D8D8;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #D8D8D8;
+	SCROLLBAR-3DLIGHT-COLOR: #EBEBEB;
+	SCROLLBAR-TRACK-COLOR: #eeeeee;
+	SCROLLBAR-DARKSHADOW-COLOR: #999999;
+	overflow-y: auto;
+}
+
+/*登入模块 超连接  样式*/
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:link {
+	font-size: 9pt;
+	color: black;
+	text-decoration: none
+}
+
+a:visited {
+	font-size: 9pt;
+	color: black;
+	text-decoration: none
+}
+
+a:hover {
+	font-size: 9pt;
+	color: blue;
+	text-decoration: none
+}
+
+/*页面按钮*/
+.short_up {
+	width: 57px;
+	height: 23px;
+	text-align: center;
+	line-height: 20px;
+	background: url(../../images/login/sb1.gif);
+	color: #666666;
+	border: 0px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 3px;
+}
+
+.short_over {
+	width: 57px;
+	height: 23px;
+	text-align: center;
+	line-height: 20px;
+	background: url(../../images/login/sb2.gif);
+	color:#666666;
+	border:0px;
+	font-weight: bold;
+	cursor:pointer;
+	margin-bottom: 3px;
+}
+

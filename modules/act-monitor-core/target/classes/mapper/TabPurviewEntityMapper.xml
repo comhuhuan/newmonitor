@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TabPurviewEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.TabPurviewEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
+    <result column="program_id" jdbcType="VARCHAR" property="programId" />
+    <result column="sec_menu_id" jdbcType="INTEGER" property="secMenuId" />
+    <result column="purview_list" jdbcType="VARCHAR" property="purviewList" />
+    <result column="purview_str" jdbcType="CHAR" property="purviewStr" />
+    <result column="is_usb_verify" jdbcType="CHAR" property="isUsbVerify" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.MonsysAllHousenameInfoEntityMapper">
+  <resultMap id="BaseResultMap" type="com.act.monitor.entity.MonsysAllHousenameInfoEntity">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="UUID" jdbcType="VARCHAR" property="uuid" />
+    <id column="houseID" jdbcType="BIGINT" property="houseid" />
+    <result column="idcID" jdbcType="VARCHAR" property="idcid" />
+    <result column="houseName" jdbcType="VARCHAR" property="housename" />
+    <result column="reserve0" jdbcType="VARCHAR" property="reserve0" />
+    <result column="reserve1" jdbcType="VARCHAR" property="reserve1" />
+    <result column="reserve2" jdbcType="VARCHAR" property="reserve2" />
+    <result column="reserve3" jdbcType="VARCHAR" property="reserve3" />
+    <result column="recordTime" jdbcType="TIMESTAMP" property="recordtime" />
+  </resultMap>
+</mapper>
